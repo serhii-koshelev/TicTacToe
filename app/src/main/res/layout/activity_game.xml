@@ -129,7 +129,7 @@
         <TableRow
             android:id="@+id/information"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="38dp">
 
             <TextView
                 android:id="@+id/human"
@@ -173,7 +173,19 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="2dp"
                 android:textSize="18sp" />
+
         </TableRow>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/startNewGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startNewGame"
+            android:text="@string/new_game" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
