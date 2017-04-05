@@ -30,7 +30,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/singlePlayer"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="0.06"
@@ -49,6 +49,7 @@
             android:layout_height="100dp"
             android:layout_weight="0.04"
             android:text="@string/multi_player"
+            android:onClick="sendMessage"
             android:textSize="24sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

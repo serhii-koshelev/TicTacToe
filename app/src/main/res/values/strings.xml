@@ -1,24 +1,22 @@
 <resources>
     <string name="app_name">TicTacToe</string>
     <string name="human_turn">Your turn</string>
+    <string name="playerX_turn">PlayerX turn</string>
+    <string name="playerO_turn">PlayerO turn</string>
     <string name="android_turn">Android\'s turn</string>
     <string name="tie">It\'s a tie!</string>
     <string name="human_won">You Won!</string>
     <string name="android_win">Android Won!</string>
-    <string name="one">1</string>
-    <string name="two">2</string>
-    <string name="three">3</string>
-    <string name="four">4</string>
-    <string name="five">5</string>
-    <string name="six">6</string>
-    <string name="seven">7</string>
-    <string name="eight">8</string>
-    <string name="nine">9</string>
-    <string name="human">Human:  </string>
+    <string name="playerX_won">PlayerX Won!</string>
+    <string name="playrO_won">PlayerO Won!</string>
+    <string name="human">Player:  </string>
     <string name="ties">Ties:  </string>
     <string name="android">Android:  </string>
+    <string name="playerX">PlayerX:  </string>
+    <string name="PlayerO">PlayerO:  </string>
     <string name="hello_text">Hi! This is Tic Tac Toe game, here you can play with your friend or computer!</string>
     <string name="singlePlayer">Single Player</string>
     <string name="multi_player">Multi Player</string>
-    <item name="human_turn" type="id">Your turn</item>
+    <string name="new_game">New Game</string>
+    <!--<item name="human_turn" type="id">Your turn</item>-->
 </resources>

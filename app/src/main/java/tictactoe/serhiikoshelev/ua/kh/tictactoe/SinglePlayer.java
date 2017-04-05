@@ -7,12 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static tictactoe.serhiikoshelev.ua.kh.tictactoe.TicTacToeGame.*;
-
 public class SinglePlayer extends AppCompatActivity
 {
 
-    private TicTacToeGame mGame;
+    private TicTacToeSinglePlayer mGame;
 
     private Button mBoardButtons[];
     private Button mStartNewGame;
@@ -33,7 +31,7 @@ public class SinglePlayer extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_single_player);
+        setContentView(R.layout.activity_game);
 
         mStartNewGame = (Button) findViewById(R.id.startNewGame);
 
@@ -57,7 +55,7 @@ public class SinglePlayer extends AppCompatActivity
         mTieCount.setText(Integer.toString(mTieCounter));
         mAndroidCount.setText(Integer.toString(mAndroidCounter));
 
-        mGame = new TicTacToeGame();
+        mGame = new TicTacToeSinglePlayer();
 
         startNewGame(mStartNewGame);
 
@@ -86,9 +84,6 @@ public class SinglePlayer extends AppCompatActivity
             setMove(mGame.ANDROID_PLAYER, move);
             mHumanTurnFirst = true;
         }
-
-
-
     }
 
     private class ButtonClickListener implements View.OnClickListener
@@ -148,7 +143,6 @@ public class SinglePlayer extends AppCompatActivity
                     mStartNewGame.setEnabled(true);
                     mGameOver = false;
                 }
-
             }
         }
 

@@ -3,19 +3,18 @@ package tictactoe.serhiikoshelev.ua.kh.tictactoe;
 /**
  * Created by serhiikoshelev on 30.03.17.
  * A simplest logic that could be to have a trainig with Android App structure and logic
- * Found the mistake, now multiplayer work right
- *  v1.1
+ *  v1.2
  */
 import java.util.Random;
 
 
-public class TicTacToeGame extends TicTacToeMultiPlayer {
+public class TicTacToeSinglePlayer extends TicTacToeMultiPlayer {
 
     public final static char HUMAN_PLAYER = FIRST_PLAYER;
     public final static char ANDROID_PLAYER = SECOND_PLAYER;
     private Random mRand;
 
-    public TicTacToeGame(){
+    public TicTacToeSinglePlayer(){
 
         new TicTacToeMultiPlayer();
 

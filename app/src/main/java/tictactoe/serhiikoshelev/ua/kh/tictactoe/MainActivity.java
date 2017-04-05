@@ -8,18 +8,27 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity  {
 
-    Button btn;
+    Button singlePlayer;
+    Button multiPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn=(Button)findViewById(R.id.button);
+        singlePlayer=(Button)findViewById(R.id.singlePlayer);
+        multiPlayer=(Button) findViewById(R.id.multiPlayer);
     }
 
 
     public void sendMessage(View view)
     {
-        Intent intent = new Intent(this, SinglePlayer.class);
-        startActivity(intent);
+        if(view == singlePlayer){
+            Intent intent = new Intent(this, SinglePlayer.class);
+            startActivity(intent);
+        }
+        if(view == multiPlayer){
+            Intent intent = new Intent(this,MultiPlayer.class);
+            startActivity(intent);
+        }
+
     }
 }
